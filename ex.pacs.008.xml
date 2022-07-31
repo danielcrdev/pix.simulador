@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Envelope
+    xmlns="https://www.bcb.gov.br/pi/pacs.008/1.8">
+    <AppHdr>
+        <Fr>
+            <FIId>
+                <FinInstnId>
+                    <Othr>
+                        <Id>92894922</Id>
+                    </Othr>
+                </FinInstnId>
+            </FIId>
+        </Fr>
+        <To>
+            <FIId>
+                <FinInstnId>
+                    <Othr>
+                        <Id>00038166</Id>
+                    </Othr>
+                </FinInstnId>
+            </FIId>
+        </To>
+        <BizMsgIdr>M92894922MO85C0g1jrPjlwH51e2Cow8</BizMsgIdr>
+        <MsgDefIdr>pacs.008.spi.1.8</MsgDefIdr>
+        <CreDt>2022-07-31T13:23:15.777Z</CreDt>
+        <Sgntr>
+            <ds:Signature
+                xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:SignedInfo>
+                    <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+                    <ds:Reference URI="#C910E304BB60B99DA53FCCFC76891E03">
+                        <ds:Transforms>
+                            <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                        </ds:Transforms>
+                        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                        <ds:DigestValue>UZoCh9vQHEe+zgGwWLvkspulJDge3Lk+G0sA5INrjyk=</ds:DigestValue>
+                    </ds:Reference>
+                    <ds:Reference URI="">
+                        <ds:Transforms>
+                            <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                            <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                        </ds:Transforms>
+                        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                        <ds:DigestValue>SnjUJNZgcHBC7h1PwI3LLQNqnok4N95obeuJKnvcQ2I=</ds:DigestValue>
+                    </ds:Reference>
+                    <ds:Reference>
+                        <ds:Transforms>
+                            <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                        </ds:Transforms>
+                        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                        <ds:DigestValue>1U66nhqAWLYYAQNf/kKqXU1rPb3IFo0uTYLXkuxLKp8=</ds:DigestValue>
+                    </ds:Reference>
+                </ds:SignedInfo>
+                <ds:SignatureValue>dOm/FYcW9Jht33/MPqQdtbLxatocLEJBgsnt03AFfIGEgxsW2jZO0yoqcjA7up2l
+AjJ3JVL4KW0btuQRFUo2jjCdWUttoRbjX0PwZSHa34II24LUZ34SI4n+GjYJLwj0
+NVUBjQDXjA7Erm+DJ0AVKkCIvAj+5Pj47S6Wi3lhiqq/aEwrtVXQCrikYpAtSUa+
+4XruaxYQiZ6v/ajHZez8Z4QIApzCOH4jyWd/U9k4HtBoMP/K1UUO0isoPKnc67TL
+nXTPR4k/pYUjjJ4Wa28Bu48qtCyxE+k9D4Wko3CgM1fhxkdRlvY/B/ybnRtNuCBj
+HFxTuv4Chp8piPDIG7rNtQ==</ds:SignatureValue>
+                <ds:KeyInfo Id="C910E304BB60B99DA53FCCFC76891E03">
+                    <ds:X509Data>
+                        <ds:X509IssuerSerial>
+                            <ds:X509IssuerName>CN=SERASA Autoridade Certificadora v5, OU=CSPB-4, O=ICP-Brasil, C=BR</ds:X509IssuerName>
+                            <ds:X509SerialNumber>2228078329512312233</ds:X509SerialNumber>
+                        </ds:X509IssuerSerial>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </ds:Signature>
+        </Sgntr>
+    </AppHdr>
+    <Document>
+        <FIToFICstmrCdtTrf>
+            <GrpHdr>
+                <MsgId>M92894922MO85C0g1jrPjlwH51e2Cow8</MsgId>
+                <CreDtTm>2022-07-31T13:23:15.777Z</CreDtTm>
+                <NbOfTxs>1</NbOfTxs>
+                <SttlmInf>
+                    <SttlmMtd>CLRG</SttlmMtd>
+                </SttlmInf>
+                <PmtTpInf>
+                    <InstrPrty>HIGH</InstrPrty>
+                    <SvcLvl>
+                        <Prtry>PAGPRI</Prtry>
+                    </SvcLvl>
+                </PmtTpInf>
+            </GrpHdr>
+            <CdtTrfTxInf>
+                <PmtId>
+                    <EndToEndId>E92894922202207311323035142A5TD4</EndToEndId>
+                </PmtId>
+                <IntrBkSttlmAmt Ccy="BRL">2.61</IntrBkSttlmAmt>
+                <AccptncDtTm>2022-07-31T13:23:15.370Z</AccptncDtTm>
+                <ChrgBr>SLEV</ChrgBr>
+                <MndtRltdInf>
+                    <Tp>
+                        <LclInstrm>
+                            <Prtry>DICT</Prtry>
+                        </LclInstrm>
+                    </Tp>
+                </MndtRltdInf>
+                <Dbtr>
+                    <Nm>RODRIGO CAVALHEIRO LIMA</Nm>
+                    <Id>
+                        <PrvtId>
+                            <Othr>
+                                <Id>42477397869</Id>
+                            </Othr>
+                        </PrvtId>
+                    </Id>
+                </Dbtr>
+                <DbtrAcct>
+                    <Id>
+                        <Othr>
+                            <Id>44089643</Id>
+                            <Issr>1</Issr>
+                        </Othr>
+                    </Id>
+                    <Tp>
+                        <Cd>CACC</Cd>
+                    </Tp>
+                </DbtrAcct>
+                <DbtrAgt>
+                    <FinInstnId>
+                        <ClrSysMmbId>
+                            <MmbId>92894922</MmbId>
+                        </ClrSysMmbId>
+                    </FinInstnId>
+                </DbtrAgt>
+                <CdtrAgt>
+                    <FinInstnId>
+                        <ClrSysMmbId>
+                            <MmbId>00416968</MmbId>
+                        </ClrSysMmbId>
+                    </FinInstnId>
+                </CdtrAgt>
+                <Cdtr>
+                    <Id>
+                        <PrvtId>
+                            <Othr>
+                                <Id>45292105880</Id>
+                            </Othr>
+                        </PrvtId>
+                    </Id>
+                </Cdtr>
+                <CdtrAcct>
+                    <Id>
+                        <Othr>
+                            <Id>117675334</Id>
+                            <Issr>1</Issr>
+                        </Othr>
+                    </Id>
+                    <Tp>
+                        <Cd>CACC</Cd>
+                    </Tp>
+                    <Prxy>
+                        <Id>thainaribeiro2016@outlook.com</Id>
+                    </Prxy>
+                </CdtrAcct>
+                <Purp>
+                    <Cd>IPAY</Cd>
+                </Purp>
+            </CdtTrfTxInf>
+        </FIToFICstmrCdtTrf>
+    </Document>
+</Envelope>
