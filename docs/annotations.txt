@@ -1,0 +1,12 @@
+A URL base da API do SPI é:
+    https://icom-h.pi.rsfn.net.br:16522 para o ambiente de homologação do SPI.
+
+
+Algorítimo polling:
+    URL = "https://icom.pi.rsfn.net.br:16422/api/v1/out/11111111/stream/start"
+    ENQUANTO (em operação)
+        R = HTTP.GET(URL)
+        URL = R.Cabeçalhos("PI-Pull-Next")
+        SE (R.Codigo = 200) ENTÃO GravaMensagens(R.Corpo)
+    FIM
+    HTTP.DELETE(URL)
